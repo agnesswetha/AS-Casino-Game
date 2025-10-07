@@ -5,12 +5,12 @@
 #include <ctime>
 using namespace std;
 
-// Function prototypes
+
 void showIntro();
 void showInstructions();
 
 int main() {
-    srand(time(0)); // initialize random seed
+    srand(time(0)); 
     system("cls");
     showIntro();
 
@@ -51,7 +51,7 @@ int main() {
         switch (choice) {
             case 1: {
                 int userGuess;
-                cout << "\nEnter your guessed number (1–10): ";
+                cout << "\nEnter your guessed number (1â€“10): ";
                 cin >> userGuess;
                 if (userGuess == rolledNumber)
                     isWinner = true;
@@ -123,3 +123,4 @@ void showInstructions() {
     cout << "3. If you lose, the bet amount is deducted from your balance.\n";
     cout << "=========================================================\n";
 }
+
